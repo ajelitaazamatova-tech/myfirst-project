@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневники Вампира | Mystic Falls Vault</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="brand-logo">
+            <span>MYSTIC</span> FALLS
+        </a>
+        <ul class="nav-links">
+            <li><a href="#characters">Персонажи</a></li>
+            <li><a href="#seasons">Сезоны</a></li>
+            <li><a href="#quiz">Квиз</a></li>
+            <li><a href="#quotes">Цитаты</a></li>
+        </ul>
+    </nav>
+    <!-- главная страница -->
+    <header class="hero">
+        <h1 class="hero-title">Дневники Вампира</h1>
+        <p class="hero-subtitle">«Смерть, любовь, месть и вечность в небольшом городке Мистик Фоллс.»</p>
+        <a href="#characters" class="btn">Исследовать Мир</a>
+    </header>
+
+    <!-- cекция персов -->
+    <section class="container" id="characters">
+        <h2 class="section-title">Герои и Монстры</h2>
+        <p class="section-subtitle">Жители, защитники и угрозы Мистик Фоллс</p>
+
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="vampire">Вампиры</button>
+            <button class="filter-btn" data-filter="human">Люди</button>
+            <button class="filter-btn" data-filter="hybrid">Гибриды / Древние</button>
+            <button class="filter-btn" data-filter="witch">Ведьмы</button>
+        </div>
+        <div class="grid" id="characters-grid">
+        </div>
+    </section>
+
+    <!-- сезоны -->
+    <section class="container" id="seasons">
+        <h2 class="section-title">Хронология Сезонов</h2>
+        <p class="section-subtitle">8 сезонов истории любви, предательств и битв</p>
+
+        <div class="timeline" id="seasons-timeline">
+        </div>
+    </section>
+    <!-- квиз -->
+    <section class="container" id="quiz">
+        <h2 class="section-title">Кто ты из Мистик Фоллс?</h2>
+        <p class="section-subtitle">Ответь на вопросы и узнай свою темную сущность</p>
+        <div class="quiz-container">
+            <div id="quiz-body">
+                <h3 id="quiz-question">Загрузка вопроса...</h3>
+                <div id="quiz-options"></div>
+            </div>
+            <div id="quiz-result" class="quiz-result">
+                <h3 id="result-title">Ваш результат</h3>
+                <p id="result-desc"></p>
+                <button class="btn" id="btn-reset-quiz">Пройти снова</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="quotes">
+        <h2 class="section-title">Культовые Цитаты</h2>
+        <p class="section-subtitle">Слова, оставшиеся в вечности</p>
+
+        <div class="quote-box">
+            <p class="quote-text" id="quote-display">«Я не могу быть тем, кем меня хотят видеть другие.»</p>
+            <p class="quote-author" id="quote-author">— Деймон Сальваторе</p>
+            <button class="btn" id="btn-generate-quote">Случайная цитата</button>
+        </div>
+    </section>
+    <!-- артефакты и бестиарий -->
+<section id="artifacts-section" class="section">
+    <h2 class="section-title">Артефакты & Бестиарий</h2>
+    <div class="artifacts-grid">
+        <div class="artifact-card">
+            <h3>💍 Кольцо от солнца</h3>
+            <p>Зачарованное ведьмами украшение с лазуритом, защищающее вампиров от сгорания на солнечной свете.</p>
+        </div>
+        <div class="artifact-card">
+            <h3>🌿 Вербена</h3>
+            <p>Растение, ослабляющее вампиров и защищающее людей от внушения и контроля разума.</p>
+        </div>
+        <div class="artifact-card">
+            <h3>🗡️ Клинок Древних</h3>
+            <p>Оружие из белого дуба, способное усыпить или навсегда уничтожить Первородного вампира.</p>
+        </div>
+        <div class="artifact-card">
+            <h3>🧪 Лекарство</h3>
+            <p>Единственная в мире доза созданного Сайласом снадобья, возвращающая вампиру человеческую природу.</p>
+        </div>
+    </div>
+</section>
+
+    <!--персонажи -->
+    <div class="modal" id="char-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal-btn">&times;</span>
+            <h2 id="modal-name"></h2>
+            <p id="modal-role"></p>
+            <p id="modal-bio"></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Сайт про сериал «Дневники вампира». Сделан литой</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
