@@ -146,6 +146,31 @@ h1, h2, h3, h4, .brand-logo {
     padding: 5rem 2rem;
 }
 
+/* культ видео */
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 0 25px rgba(139, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.video-container:hover {
+    border-color: var(--bright-red);
+    box-shadow: 0 0 35px var(--crimson-glow), 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+.custom-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    outline: none;
+}
+
 .section-title {
     text-align: center;
     font-size: 2.5rem;
